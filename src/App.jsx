@@ -7,12 +7,6 @@ import Schedule from './components/schedule'
 function App() {
 
   return (
-
-    // <div>
-    //   <BookingForm />
-
-    // </div>
-
     <Router>
       <Routes>
 

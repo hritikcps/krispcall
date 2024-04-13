@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./index.css";
 import { useNavigate } from 'react-router-dom';
+import { sendLead } from '../../utils/api';
+
 
 
 const BookingForm = () => {
@@ -9,9 +11,9 @@ const BookingForm = () => {
     const [formData, setFormData] = useState({
         full_name: '',
         email: '',
-        question_0: '',
-        question_1: '',
-        phone_number: ''
+        phone_number: '',
+        description: '',
+        whatsApp_number: ''
     });
 
     const handleInputChange = (event) => {
@@ -23,11 +25,22 @@ const BookingForm = () => {
         console.log(name + ":" + value);
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event) =>{
         event.preventDefault();
-        console.log('Form submitted:', formData);
+        console.log(formData);
         navigate('/schedule')
     }
+
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     try {
+    //         await sendLead(formData);
+    //         console.log('Lead sent successfully');
+    //         navigate('/schedule');
+    //     } catch (error) {
+    //         console.error('Error sending lead:', error);
+    //     }
+    // }
 
     return (
 
@@ -175,7 +188,7 @@ const BookingForm = () => {
                                                         <label htmlFor="rIfUy0vGF7yKFQ2GgqUqX" className="ls9i9qr">Please share anything that will help prepare for our meeting.</label>
                                                     </div>
                                                     <div className="l15h8fme d1dzuwnm">
-                                                        <textarea className="i1uya22c ikzg8f9" type="textarea" maxLength="10000" name="question_1" value={formData.question_1} onChange={handleInputChange} id="rIfUy0vGF7yKFQ2GgqUqX"  autoCorrect="off" autoComplete="off" aria-invalid="false" defaultValue=""></textarea>
+                                                        <textarea className="i1uya22c ikzg8f9" type="textarea" maxLength="10000" name="question_1" value={formData.question_1} onChange={handleInputChange} id="rIfUy0vGF7yKFQ2GgqUqX" autoCorrect="off" autoComplete="off" aria-invalid="false" defaultValue=""></textarea>
                                                     </div>
                                                 </div>
                                             </div>
