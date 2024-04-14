@@ -14,10 +14,6 @@ const BookingForm = () => {
         phone_number: '',
         description: '',
         whatsApp_number: ''
-
-
-        
-
     });
 
     const handleInputChange = (event) => {
@@ -29,22 +25,22 @@ const BookingForm = () => {
         console.log(name + ":" + value);
     }
 
-    const handleSubmit = (event) =>{
-        event.preventDefault();
-        console.log(formData);
-        navigate('/schedule')
-    }
-
-    // const handleSubmit = async (event) => {
+    // const handleSubmit = (event) =>{
     //     event.preventDefault();
-    //     try {
-    //         await sendLead(formData);
-    //         console.log('Lead sent successfully');
-    //         navigate('/schedule');
-    //     } catch (error) {
-    //         console.error('Error sending lead:', error);
-    //     }
+    //     console.log(formData);
+    //     navigate('/schedule')
     // }
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            await sendLead(formData);
+            console.log('Lead sent successfully');
+            navigate('/schedule');
+        } catch (error) {
+            console.error('Error sending lead:', error);
+        }
+    }
 
     return (
 
