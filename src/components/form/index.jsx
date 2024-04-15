@@ -176,7 +176,7 @@ const BookingForm = () => {
                                                                         <div className="iti-flag in"></div>
                                                                     </div>
                                                                 </div>
-                                                                <input className="i1uya22c" type="tel" name="question_0" value={formData.question_0} onChange={handleInputChange} id="a3Yh1Sv2aRzHna_kcXZsL" aria-invalid="false" autoComplete="tel" required data-intl-tel-input-id="0" />
+                                                                <input className="i1uya22c" type="tel" name="phone_number" value={formData.phone_number} onChange={handleInputChange} id="a3Yh1Sv2aRzHna_kcXZsL" aria-invalid="false" autoComplete="tel" required data-intl-tel-input-id="0" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -188,7 +188,7 @@ const BookingForm = () => {
                                                         <label htmlFor="rIfUy0vGF7yKFQ2GgqUqX" className="ls9i9qr">Please share anything that will help prepare for our meeting.</label>
                                                     </div>
                                                     <div className="l15h8fme d1dzuwnm">
-                                                        <textarea className="i1uya22c ikzg8f9" type="textarea" maxLength="10000" name="question_1" value={formData.question_1} onChange={handleInputChange} id="rIfUy0vGF7yKFQ2GgqUqX" autoCorrect="off" autoComplete="off" aria-invalid="false" defaultValue=""></textarea>
+                                                        <textarea className="i1uya22c ikzg8f9" type="textarea" maxLength="10000" name="description" value={formData.description} onChange={handleInputChange} id="rIfUy0vGF7yKFQ2GgqUqX" autoCorrect="off" autoComplete="off" aria-invalid="false" defaultValue=""></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -206,7 +206,7 @@ const BookingForm = () => {
                                                                     <div className="iti-flag in"></div>
                                                                 </div>
                                                             </div>
-                                                            <input className="i1uya22c" type="tel" name="phone_number" value={formData.phone_number} onChange={handleInputChange} id="gMMmaP-hpLX9m9TyNQef4" aria-invalid="false" autoComplete="tel" data-intl-tel-input-id="1" />
+                                                            <input className="i1uya22c" type="tel" name="whatsApp_number" value={formData.whatsApp_number} onChange={handleInputChange} id="gMMmaP-hpLX9m9TyNQef4" aria-invalid="false" autoComplete="tel" data-intl-tel-input-id="1" />
                                                         </div>
                                                     </div>
                                                 </div>
