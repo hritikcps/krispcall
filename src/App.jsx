@@ -2,6 +2,7 @@ import './App.css'
 import BookingForm from './components/form'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Schedule from './components/schedule'
+import Demo from './pages/demo'
 
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <Router>
       <Routes>
 
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/" element={<BookingForm />} />
+        <Route path="/schedule" element={<Schedule/>} />
+        <Route path="/bookingform" element={<BookingForm />} />
+        <Route path="/" element={<Demo/>} />
 
 
 

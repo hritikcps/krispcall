@@ -42,6 +42,10 @@ const BookingForm = () => {
         }
     }
 
+    const handleClick = () => {
+        navigate('/');
+    }
+
     return (
 
 
@@ -61,7 +65,7 @@ const BookingForm = () => {
                                                 <div className="simplebar-content" style={{ padding: 0 }}>
                                                     <div className="Z3zhp7CS7tNsCSX6_KJW KtQUtHvVvyq716gdA29c">
                                                         <div className="Hl8alPNUMZI6wp5bmNRn tn5Xb5vAgjr9spv6HYeI">
-                                                            <button aria-label="Go to previous page" className="uvkj3lh _w8iXDi37ZtszlePqV6J k_KP3TT_QEVKk3VAikPN Gy73NVnQ6DJPoaiPoRRb" type="button">
+                                                            <button aria-label="Go to previous page" className="uvkj3lh _w8iXDi37ZtszlePqV6J k_KP3TT_QEVKk3VAikPN Gy73NVnQ6DJPoaiPoRRb" type="button" onClick={handleClick}>
                                                                 <span className="i84knf7 ig3btk n2yyy6o" />
                                                             </button>
                                                         </div>
