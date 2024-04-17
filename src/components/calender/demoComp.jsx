@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 // import Timezone from "./timezone.jsx";
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
+import "../../styles/demo.css"
 
 
 const DemoComp = () => {
@@ -16,8 +17,8 @@ const DemoComp = () => {
     day: 'numeric'
   });
 
-  
-  
+
+
 
   return (
     <div>
